@@ -25,7 +25,7 @@ Run ALPR Service
 >List all running container 
 *     docker ps 
 
->Check docker status , "Server started" shows docker run properly.
+>Check docker status , "Server started" shows docker is running properly.
 *     docker logs <container ID>
 ![Alt text](image/docker_log_ok.png?raw=true "Title")
 
