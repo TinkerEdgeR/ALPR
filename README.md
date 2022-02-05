@@ -16,15 +16,15 @@ Run ALPR Service
 *      docker run -d --restart unless-stopped --privileged --network host -v /home/linaro/MyImg:/MyImg alpr-restful:XXXX_TW --obj-thresh=0.5
 
 #### Description
-* -d -–restart unless-stopped  // Executed in the background, automatically started when the Edge R is restarted
-* --privileged, --network host  // Grant container system access permissions 
-* -v  // Pre-mount directory,  images to be processed
-* --obj-thresh // License plate object detection threshold (0.5~0.9, default 0.5)
+* -d -–restart unless-stopped     // Executed in the background, automatically started when the Edge R is restarted
+* --privileged, --network host      // Grant container system access permissions 
+* -v      // Pre-mount directory,images to be processed
+* --obj-thresh      // License plate object detection threshold (0.5~0.9, default 0.5)
 #### Docker basic command
 >List all running container 
 *     docker ps 
 
->Check docker status , Server started" shows docker run properly
+>Check docker status , "Server started" shows docker run properly.
 *     docker logs <container ID>
 ![Alt text](image/docker_log_ok.png?raw=true "Title")
 
@@ -35,6 +35,18 @@ Run ALPR Service
 
 ## License Plate Check Resful-API
 
+### JSON Return
 ![Alt text](image/API_return_JSON.png?raw=true "Title")
+#### Description
+>一個List存放 N筆車牌辨認結果
+>>List of results
+>每一筆結果包含<br>
+>>Confidence: 信心分數<br>
+>>Plate: 車牌字串<br>
+>>Plate_size: 車牌大小<br>
+>>Polygon: 車牌的四個頂點座標(x,y)
+>>>List of points
+  
+![image](https://user-images.githubusercontent.com/61956751/152634980-a25ca631-bc80-406c-894e-d9983c279d26.png)
 
  ![Alt text](image/API_image_ok.png?raw=true "Title")
