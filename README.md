@@ -14,6 +14,7 @@ ASUS IoT ALPR Edge AI Dev Kit is a comprehensive automatic license-plate recogni
 ### Execute docker image
 Run ALPR Service
 *      docker run -d --restart unless-stopped --privileged --network host -v /home/linaro/MyImg:/MyImg alpr-restful:XXXX_TW --obj-thresh=0.5
+
 #### Description
 * -d -–restart unless-stopped  // Executed in the background, automatically started when the Edge R is restarted
 * --privileged, --network host  // Grant container system access permissions 
@@ -25,12 +26,15 @@ Run ALPR Service
 
 >Check docker status , Server started" shows docker run properly
 *     docker logs <container ID>
+![Alt text](image/docker_log_ok.png?raw=true "Title")
 
+  
 >Stop docker service.
 *     docker stop <container ID>
 
 
 ## License Plate Check Resful-API
 
+![Alt text](image/API_return_JSON.png?raw=true "Title")
 
-
+ ![Alt text](image/API_image_ok.png?raw=true "Title")
