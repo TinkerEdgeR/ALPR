@@ -1,11 +1,11 @@
-# Reflash Tinker OS via UMS mode
-The UMS mode (USB mass storage) enable user to mount Tinker Edge R as common usb storage, it bring convenience for reflashing new OS image cross PC or Mac with no device driver required.</br> 
+# Flash Tinker OS via UMS mode
+The UMS mode (USB mass storage) enable user to mount Tinker Edge R as common usb storage, it bring convenience for flashing new OS image cross PC or Mac with no device driver required.</br> 
 </br>
 Although OS installation on Tinker Edge R supports either SD card or eMMC, `eMMC is recommanded due to uncontrollable SD card qualities.`  There are two main steps making eMMC support UMS base OS.:
 >(1) Make a bootable SD card let Edge R can be initiated by UMS mode. </br>
->(2)Reflash same image again to eMMC. 
+>(2) Flash same image again to eMMC. 
 
-`NOTE: This procedure needs to execute once on each Tinker Edge R, as long as the image version still keeps in V1.0.13 or higher. Afterwards, you just flash an image following steps 3-5 to 3-9 with a USB Type-C connection.`
+`NOTE: This procedure needs to execute once on each Tinker Edge R, as long as the image version still keeps in V1.0.13 or higher. Afterwards, Edge R eMMC natively support UMS mode, bootable SD card is not needed..`
 
 
 ##	Preparation 
