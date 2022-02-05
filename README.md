@@ -16,10 +16,10 @@ Run ALPR Service
 *      docker run -d --restart unless-stopped --privileged --network host -v /home/linaro/MyImg:/MyImg alpr-restful:XXXX_TW --obj-thresh=0.5
 
 #### Description
-* -d -–restart unless-stopped     // Executed in the background, automatically started when the Edge R is restarted
-* --privileged, --network host      // Grant container system access permissions 
-* -v      // Pre-mount directory,images to be processed
-* --obj-thresh      // License plate object detection threshold (0.5~0.9, default 0.5)
+* <b>-d -–restart unless-stopped</b>     // Executed in the background, automatically started when the Edge R is restarted
+* <b>--privileged, --network host</b>      // Grant container system access permissions 
+* <b>-v</b>      // Pre-mount directory,images to be processed
+* <b>--obj-thresh</b>      // License plate object detection threshold (0.5~0.9, default 0.5)
 #### Docker basic command
 >List all running container 
 *     docker ps 
@@ -34,6 +34,13 @@ Run ALPR Service
 
 
 ## License Plate Check Restful-API
+### Direct recognition from camera stream
+*      curl -X GET http://[ip]:8080/camera/image/recognize?camera_id=[Device ID]
+* Example - web camera is located at /dev/video10
+*      curl -X GET http://localhost:8080/camera/image/recognize?camera_id=10
+
+     
+
 
 ### JSON Return
 ![Alt text](image/API_return_JSON.png?raw=true "Title")
@@ -46,3 +53,7 @@ Run ALPR Service
 >>>List of points
   
  ![Alt text](image/API_image_ok.png?raw=true "Title")
+Correct: return JSON string, status HTTP_OK(200)
+Error: Error message returned, status HTTP_BAD_REQUEST(400)…
+{ "error" : "error message..." }
+
