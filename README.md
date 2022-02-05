@@ -33,20 +33,16 @@ Run ALPR Service
 *     docker stop <container ID>
 
 
-## License Plate Check Resful-API
+## License Plate Check Restful-API
 
 ### JSON Return
 ![Alt text](image/API_return_JSON.png?raw=true "Title")
 #### Description
->一個List存放 N筆車牌辨認結果
->>List of results
->每一筆結果包含<br>
->>Confidence: 信心分數<br>
->>Plate: 車牌字串<br>
->>Plate_size: 車牌大小<br>
->>Polygon: 車牌的四個頂點座標(x,y)
+>A List stores N license plate recognition results
+  >><B>Confidence</B>:confidence score<br>
+>><B>Plate</B>:license plate string<br>
+>><B>Plate_size</B>:license plate size<br>
+>><B>Polygon</B>:The coordinates of the four endpoints of the license plate(x,y)
 >>>List of points
   
-![image](https://user-images.githubusercontent.com/61956751/152634980-a25ca631-bc80-406c-894e-d9983c279d26.png)
-
  ![Alt text](image/API_image_ok.png?raw=true "Title")
