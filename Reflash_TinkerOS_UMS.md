@@ -33,8 +33,8 @@ Although OS installation on Tinker Edge R supports either SD card or eMMC, `eMMC
 (4)	Click “Flash from file”, then browse file name “Tinker_Edge_R-Debian-Stretch-vX.X.XX.X-YYYYMMDD.img”.
  
 
-(5)	Click “Select target” to choose the micro-SD card.
- 
+(5)	Click “Select target” to choose the micro-SD card.</br>
+![Alt text](image/SDXC_UMS_USB_Etcher.png?raw=true "Title")
 
 (6)	Then clicking “Flashing!” beginning to flash image to SD card.
  
@@ -45,11 +45,12 @@ Although OS installation on Tinker Edge R supports either SD card or eMMC, `eMMC
 (1) Remove the micro-SD and insert it into SD slot of Tinker Edge R.</br>
 (2) Connect USB Type-C cable to Tinker Edge R and Type-A to PC/Mac</br>
 (3) Connect power adaptor to Tinker Edge R.</br>
->The Laptop/PC should detect several USB disks which come from Tinker Edge R. </br>
-`(Please DO NOT format any of the detected disks when popping up the format warning.)`</br>
-(4)Run Etcher utility. (The following steps are the same as above.)</br>
-(5)Click “Flash from file” and browse the image file, such as “Tinker_Edge_R-Debian-Stretch-vX.X.XX.X-YYYYMMDD.img”.</br>
-(6)Click “Select target” and select “ASUS Tinker UMS USB Device”.</br>
-(7)Click “Flash!” beginning to flash the image and waiting for it finishes.</br>
-(8)You could remove the micro-SD card, USB Type-C cable and power adaptor from Tinker Edge R once flashed completely.</br>
+The Laptop/PC should detect several USB disks which come from Tinker Edge R. </br>
+`(DO NOT format any of the mounted disks when popping up the format warning.)`</br>
+(4 )Run Etcher utility. (The following steps are the same as above.)</br>
+(5) Click “Flash from file” and browse the image file, such as “Tinker_Edge_R-Debian-Stretch-vX.X.XX.X-YYYYMMDD.img”.</br>
+(6) Click “Select target” and select “ASUS Tinker UMS USB Device”.</br>
+![Alt text](image/ASUS_Tinker_UMS_USB_Etcher.png?raw=true "Title") </br>
+(7) Click “Flash!” beginning to flash the image and waiting for it finishes.</br>
+(8) You could remove the micro-SD card, USB Type-C cable and power adaptor from Tinker Edge R once flashed completely.</br>
 
