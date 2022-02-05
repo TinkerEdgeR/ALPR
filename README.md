@@ -42,7 +42,7 @@ Run ALPR Service
 
 ### Get image recognition from Base64 format
 >*      curl "base64 string"  -X POST http://localhost:8080/data/image/recognize
->*    Example link
+[Example](https://github.com/TinkerEdgeR/ALPR/blob/c768ace2d9cabd8c0d70cc0f04fac6280a5b2a38/sample%20code/base64_call.sh)
 ### Direct recognition from camera stream
 *      curl -X GET http://[ip]:8080/camera/image/recognize?camera_id=[Device ID]
 >* Example - web camera is located at /dev/video10
