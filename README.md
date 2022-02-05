@@ -38,7 +38,7 @@ Run ALPR Service
 
 ### Get image recognition from file path
 *      curl -X GET http://[ip]:8080/file/image/recognize?path=[image file]
->* Example:
+* Example:
 >*      curl http://localhost:8080/file/image/recognize?path=/MyImg/20210621000148367_1_ASM8888.jpg
 
 ### Get image recognition from Base64 format
@@ -47,7 +47,7 @@ Run ALPR Service
   
 ### Direct recognition from camera stream
 *      curl -X GET http://[ip]:8080/camera/image/recognize?camera_id=[Device ID]
->* Example - web camera is located at /dev/video10
+* Example - web camera is located at /dev/video10
 >*      curl -X GET http://localhost:8080/camera/image/recognize?camera_id=10
 
 ### JSON Return
@@ -69,10 +69,15 @@ Run ALPR Service
 ## Examples
 
 Batch testing of numerous car-plate photos
-* Prepare the validation photos, include the correct car-plate number in file name.
+* Prepare the validation photos.
 * Side load photos to Edge R storage
-* Run docker service with specfic folder
+* Run docker service
 * Run [sample code](https://github.com/TinkerEdgeR/ALPR/blob/6dba7e19075267e1ba8c720d80370c7afff92559/sample%20code/ALPR_API_base64_1229.py) 
   *      python3 ALPR_API_base64_1229.py [directory absolute path]
->* Example 
->*       python3 script_1026.py  /home/linaro/Desktop/Customer_photos/
+* Example 
+>*        python3 ALPR_API_base64_1229.py  /home/linaro/Desktop/Customer_photos/
+* Output CSV include:
+>* File name
+>* Recognition result
+>* Confidence scope
+>* Time taken of each photo
