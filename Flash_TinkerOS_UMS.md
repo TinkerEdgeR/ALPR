@@ -5,7 +5,7 @@ Although OS installation on Tinker Edge R supports either SD card or eMMC, `eMMC
 >(1) Make a bootable SD card let Edge R can be initiated by UMS mode. </br>
 >(2) Flash same image again to eMMC. 
 
-`NOTE: This procedure needs to execute once on each Tinker Edge R, as long as the image version still keeps in V1.0.13 or higher. Afterwards, Edge R eMMC natively support UMS mode, bootable SD card is not needed..`
+`NOTE: This procedure needs to execute once on each Tinker Edge R, as long as the image version still keeps in V1.0.13 or higher. Afterwards, Edge R eMMC natively support UMS mode, bootable SD card is not needed.`
 
 
 ##	Preparation 
