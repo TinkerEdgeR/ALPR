@@ -2,12 +2,15 @@
 ![](https://iot.asus.com/_nuxt/img/2527929.png)  
 
 ## Introduction
-ASUS IoT ALPR Edge AI Dev Kit is a comprehensive automatic license-plate recognition (ALPR) solution that includes both the necessary hardware and software to enable systems integrators (SIs) to create edge applications that mesh seamlessly with existing ALPR infrastructure. [See more](https://github.com/TinkerEdgeR/ALPR/blob/107683b959fd6aa8a2c791ec8256e62e5f4db7ea/ALPR%20FLYER_Eng_220114_compressed.pdf)
+ASUS IoT ALPR Edge AI Dev Kit is a comprehensive automatic license-plate recognition (ALPR) solution that includes both the necessary hardware and software to enable systems integrators (SIs) to create edge applications that mesh seamlessly with existing ALPR infrastructure. [See Product Flyer](https://github.com/TinkerEdgeR/ALPR/blob/107683b959fd6aa8a2c791ec8256e62e5f4db7ea/ALPR%20FLYER_Eng_220114_compressed.pdf)
 
+## Workflow
+* Get Tinker Edge R AI board (where to buy: https://tinker-board.asus.com/where-to-buy.html)
+* Complete Tinker Edge R OS installation and environment runtime
+* Contact your business representative to get the latest ALPR demo docker image. 
 
+## Prerequisite
 
-Prerequisite
-Get Tinker Edge R AI board (where to buy: https://tinker-board.asus.com/where-to-buy.html
 
 
 Get the latest Debian image and flash the OS
