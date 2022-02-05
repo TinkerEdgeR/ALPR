@@ -8,23 +8,26 @@ ASUS IoT ALPR Edge AI Dev Kit is a comprehensive automatic license-plate recogni
 ### Preparation
 * Get Tinker Edge R AI board (where to buy: https://tinker-board.asus.com/where-to-buy.html)
 * Complete Tinker Edge R OS installation and environment runtime
-* Contact your business representative to get the latest ALPR docker image. 
-* Docker load image file, wait few minutes for loading process.
+* Contact your business representative to get the latest ALPR docker image. Side load TAR file to Edge R.
+* Load ALPR docker image, wait few minutes for loading process.
 *      docker load  < alpr-restful_XXXX_TW.tar
 ### Execute docker image
-
+Run ALPR Service
 *      docker run -d --restart unless-stopped --privileged --network host -v /home/linaro/MyImg:/MyImg alpr-restful:XXXX_TW --obj-thresh=0.5
 #### Description
 * -d -–restart unless-stopped  // Executed in the background, automatically started when the Edge R is restarted
 * --privileged, --network host  // Grant container system access permissions 
 * -v  // Pre-mount directory,  images to be processed
-* --obj-thresh // License plate object detection threshold (default 0.5)
-#### log
-docker logs <container ID>
-啟動一分鐘後，看到” Server started”開始運作
-* 停止服務
-* docker ps ->確認執行中的container ID
-* docker stop <container ID>
+* --obj-thresh // License plate object detection threshold (0.5~0.9, default 0.5)
+#### Docker basic command
+>List all running container 
+*     docker ps 
+
+>Check docker status , Server started" shows docker run properly
+*     docker logs <container ID>
+
+>Stop docker service.
+*     docker stop <container ID>
 
 
 ## License Plate Check Resful-API
