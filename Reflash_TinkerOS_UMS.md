@@ -1,4 +1,5 @@
-To support UMS mode for Tinker Edge R, it must flash image thru micro-SD card with recovery image. It would affect the version after Tinker Edge R Debian Stretch V1.0.13 when you would upgrade the image from an older one.
+# Reflash Tinker OS via UMS mode
+The UMS mode (USB mass storage) enable user to mount Tinker Edge R as common usb storage, 
 
 
 1.	Preparation 
