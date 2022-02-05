@@ -16,10 +16,10 @@ Run ALPR Service
 *      docker run -d --restart unless-stopped --privileged --network host -v /home/linaro/MyImg:/MyImg alpr-restful:XXXX_TW --obj-thresh=0.5
 
 #### Description
-* <b>-d -–restart unless-stopped</b>     // Executed in the background, automatically started when the Edge R is restarted
-* <b>--privileged, --network host</b>      // Grant container system access permissions 
-* <b>-v</b>      // Pre-mount directory,images to be processed
-* <b>--obj-thresh</b>      // License plate object detection threshold (0.5~0.9, default 0.5)
+>* <b>-d -–restart unless-stopped</b>     // Executed in the background, automatically started when the Edge R is restarted
+>* <b>--privileged, --network host</b>      // Grant container system access permissions 
+>* <b>-v</b>      // Pre-mount directory,images to be processed
+>* <b>--obj-thresh</b>      // License plate object detection threshold (0.5~0.9, default 0.5)
 #### Docker basic command
 >List all running container 
 *     docker ps 
@@ -34,10 +34,19 @@ Run ALPR Service
 
 
 ## License Plate Check Restful-API
+
+### Get image recognition from file path
+*      curl -X GET http://[ip]:8080/file/image/recognize?path=[image file]
+>* Example:
+>*      curl http://localhost:8080/file/image/recognize?path=/MyImg/20210621000148367_1_ASM8888.jpg
+
+### Get image recognition from Base64 format
+>*      curl "base64 string"  -X POST http://localhost:8080/data/image/recognize
+>*    Example link
 ### Direct recognition from camera stream
 *      curl -X GET http://[ip]:8080/camera/image/recognize?camera_id=[Device ID]
-* Example - web camera is located at /dev/video10
-*      curl -X GET http://localhost:8080/camera/image/recognize?camera_id=10
+>* Example - web camera is located at /dev/video10
+>*      curl -X GET http://localhost:8080/camera/image/recognize?camera_id=10
 
      
 
@@ -53,7 +62,7 @@ Run ALPR Service
 >>>List of points
   
  ![Alt text](image/API_image_ok.png?raw=true "Title")
-Correct: return JSON string, status HTTP_OK(200)
-Error: Error message returned, status HTTP_BAD_REQUEST(400)…
+* Correct: return JSON string, status HTTP_OK(200)
+* Error: Error message returned, status HTTP_BAD_REQUEST(400)…
 { "error" : "error message..." }
 
