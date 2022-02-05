@@ -27,7 +27,7 @@ Run ALPR Service
 >Check docker status , "Server started" shows docker is running properly.
 *     docker logs <container ID>
 ![Alt text](image/docker_log_ok.png?raw=true "Title")
-`(Note: Need ineternet connection to get license key at first time)`
+`(Note: Tinker Edge R requires ineternet connection to get license key at first time)`
 
   
 >Stop docker service.
