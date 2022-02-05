@@ -8,6 +8,9 @@ A USB Type-C cable
 Tinker Edge R
 Power Adaptor, 12~19 VDC
 
+Get the Tinker OS (Debian)
+https://tinker-board.asus.com/download-list.html?product=tinker-edge-r
+
 Download tool either one of below list: (This document demonstrates by using Etcher.)
 Etcher, https://www.balena.io/etcher/ 
 Win32DiskImager, https://sourceforge.net/projects/win32diskimager/ 
