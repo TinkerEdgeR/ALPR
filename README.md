@@ -7,7 +7,7 @@ ASUS IoT ALPR Edge AI Dev Kit is a comprehensive automatic license-plate recogni
 ## Workflow
 ### Preparation
 * Get Tinker Edge R AI board (where to buy: https://tinker-board.asus.com/where-to-buy.html)
-* Complete Tinker Edge R OS installation and environment runtime
+* Complete [Tinker Edge R OS installation](https://github.com/TinkerEdgeR/ALPR/blob/1b515fcac068c28fbc833088bf509bb74b9dc9b4/Flash_TinkerOS_UMS.md) and environment runtime
 * Contact your business representative to get the latest ALPR docker image. Side load TAR file to Edge R.
 * Load ALPR docker image, wait few minutes for loading process.
 *      docker load  < alpr-restful_XXXX_TW.tar
