@@ -66,9 +66,9 @@ Run ALPR Service
 { "error" : "error message..." }
 
 
-## Examples
+## Sample Codes
 
-Batch testing of numerous car-plate photos
+### Batch testing of numerous car-plate photos
 * Prepare the validation photos.
 * Side load photos to Edge R storage
 * Run docker service
@@ -81,3 +81,16 @@ Batch testing of numerous car-plate photos
 >* Recognition result
 >* Confidence scope
 >* Time taken of each photo
+
+### Rendering the recognition result
+
+This sample demonstrates OSD info on screenshot, help you to identify the car-plate boundary, recognition result and confidence score. </br>
+</br>
+ALPR engine supports multiple car-plate recognition from single image, feel free to modify the code to fit your needs.
+
+* Get [sample code](https://github.com/TinkerEdgeR/ALPR/blob/ea4ffa8f276cdd583a98ae45a90ad3a4c4e477c9/sample%20code/osd_rendering.py)
+*      python3 osd_rendering.py -o [host file path] -c [container file path] -i 14
+* Example:
+>*     python3 sample.py -o /home/linaro/images/usbcam -c /images/usbcam -i 14
+  
+![Alt text](image/rendering-OSD.png?raw=true "Title")
