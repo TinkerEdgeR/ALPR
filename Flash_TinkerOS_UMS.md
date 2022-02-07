@@ -24,7 +24,7 @@ Although OS installation on Tinker Edge R supports either SD card or eMMC, `eMMC
 * >Etcher, https://www.balena.io/etcher/ 
 * >Win32DiskImager, https://sourceforge.net/projects/win32diskimager/ 
 
-(3).	Flash recovery image to micro-SD card
+(3).	Flash downloaded image to micro-SD card
 * >Insert micro-SD card into the card reader.
 * >Insert the card reader to the Laptop/PC.
 * >Run Etcher utility.
