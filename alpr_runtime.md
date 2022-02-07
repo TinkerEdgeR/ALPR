@@ -7,7 +7,7 @@ This document shows a quick way preparing the runtime of ALPR, which include
 * Clone project resource to Tinker Edge R
 *       git clone https://github.com/TinkerEdgeR/ALPR.git
 * Swith to env_setup folder, make script executable 
-*       chmod +x alprruntime.sh
+*       chmod +x alpr_runtime.sh
 * Execute script
-*       ./alprruntime.sh
+*       ./alpr_runtime.sh
 * Reboot Edge R after installation done.
